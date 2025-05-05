@@ -152,7 +152,10 @@
   display: grid;
   margin: 0 calc(var(--gb-standardSpacing) * -1);
   bottom: 0;
-  text-shadow: -3px -3px 5px black, 3px 3px 5px black, 0 0 12px black;
+  text-shadow:
+    -3px -3px 5px black,
+    3px 3px 5px black,
+    0 0 12px black;
   text-align: center;
   height: 76px;
 }
@@ -193,12 +196,12 @@
   border: none;
 }
 
-.gb-quickref-sheet h1,
+.gb-quickref-sheet h1:not(.window-title),
 .gb-quickref-sheet h2 {
   margin: 0.5rem 0 0;
 }
 
-.gb-quickref-sheet h1 {
+.gb-quickref-sheet h1:not(.window-title) {
   font-size: 32px;
   color: black;
   text-align: center;
